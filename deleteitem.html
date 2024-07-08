@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Item Form</title>
+    
+    <link rel="stylesheet" href="bulma/bulma.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <a href="dashboard.html">HOME</a>
+        <a href="additem.html">ADD ITEM</a>
+        <a href="edititem.html">EDIT ITEM</a>
+        <a href="deleteitem.html">DELETE ITEM</a>
+    </div>
+    <div class="form-container">
+        
+        <form action="dashboard.html" method="POST">
+            <p>Are you sure you want to delete this item?</p>
+            <input type="hidden" id="itemId" name="itemId" value="item_id_to_delete">
+            <input type="submit" value="Delete Item">
+        </form>
+    </div>
+</body>
+</html>
